@@ -27,7 +27,4 @@ jobs:
         flake8 . --count --select=F521,F541
         flake8 . --count --select=F601,F631
         flake8 . --count --select=F811,F821,F823,F841
-    - name: Test with pytest
-      run: |
-        pytest
     

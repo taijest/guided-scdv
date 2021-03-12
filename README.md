@@ -1,1 +1,1 @@
-# guided-scdv
+# SCDV with Guided Gaussian Mixture Model

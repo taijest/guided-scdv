@@ -23,13 +23,9 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-        # Linting import
         flake8 . --count --select=F401,F403,F405
-        # Linting format
         flake8 . --count --select=F521,F541
-        # Linting 
         flake8 . --count --select=F601,F631
-        # Linting variable
         flake8 . --count --select=F811,F821,F823,F841
     - name: Test with pytest
       run: |

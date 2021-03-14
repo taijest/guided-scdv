@@ -1,6 +1,7 @@
-from typing import Iterable, List
+from typing import List
 
 Document = List[List[str]]
+
 
 class Documents:
     def __init__(self, documents: Document) -> None:
@@ -10,5 +11,5 @@ class Documents:
         return len(self.documents)
 
     def __iter__(self):
-        for document in documents:
+        for document in self.documents:
             yield document
